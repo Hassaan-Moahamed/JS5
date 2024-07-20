@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container mt-4 mb-4">
+      <a class="navbar-brand ps-0" href="#"><img src="image/logo.png" alt="">
+        <div class="logo-type">
+          <h1 class=" fs-4 text-white m-0">Weather</h1>
+          <small class=" text-gray">tagline goes here</small>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-0 mb-lg-0">
+          <li class="nav-item me-5">
+            <a class="nav-link active btn btn-info rounded rounded-5 text-white px-4" aria-current="page"
+              href="#">Home</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link active btn  btn-info rounded rounded-5 px-3 text-white" aria-current="page"
+              href="#">News</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link active btn btn-info rounded rounded-5 px-4  text-white" aria-current="page"
+              href="#">Live</a>
+            </a>
+
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link active btn  btn-info rounded rounded-5 px-3 text-white" aria-current="page"
+              href="#">Photos</a>
+          </li>
+          <li class="nav-item me-0">
+            <a class="nav-link active btn  btn-info rounded rounded-5 px-3 text-white" aria-current="page"
+              href="#">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="setbackimg">
+    <div class=" pt-5 pb-5 container">
+      <form action="" class="position-relative">
+        <input class="form-control rounded rounded-5 pt-3 ps-4 pb-3 border-0 " type="text" id="FindINput"
+          placeholder="Find your location">
+        <button
+          class="btn  btn-info position-absolute top-0 end-0 me-1 my-auto px-5 mt-1 pt-2 pb-2 rounded rounded-5 fs-5 text-white" id="Findbtn">Find</button>
+      </form>
+      <div class=" mt-5 mb-3">
+        <div class="row m-0">
+          <div class="col-md-4 backg p-0   ">
+            <div class=" bg-head  d-flex justify-content-between align-items-center p-2">
+              <span id="toDayWeek" class=" text-gray"></span>
+              <span id="toDayNumMonth" class=" text-gray"></span>
+            </div>
+            <div class="ps-3">
+              <h4 id="nameCountry" class="pt-5 pb-3 ps-2 text-gray"></h4>
+            </div>
+            <div class="ps-3">
+              <span id="tempTD" class="ps-2 fw-bolder  text-white fontsi"></span>
+              <img id="stateOfWPicTD" src="" class="ms-5" alt="">
+            </div>
+            <div class="ps-3 mb-3">
+              <h5 id="stateOfWTD" class="text-info fs-5 ms-2"></h5>
+            </div>
+            <div class="mt-5 mb-3 ps-3">
+              <span>
+                <img src="image/icon-umberella.png" alt="">
+                <span id="umberellaTd" class="mx-2 text-gray"></span>
+              </span>
+              <span class="ms-2">
+                <img src="image/icon-wind.png" alt="">
+                <span id="windTD" class="mx-2 text-gray"></span>
+              </span>
+              <span class="ms-2">
+                <img src="image/icon-compass.png" alt="">
+              <span id="compassTD" class ="mx-2 text-gray"></span>
+            </span>
+            </div>
+          </div>
+          <div class="col-md-4  p-0  bg-head    ">
+            <div class=" text-center  text-deco p-2 ">
+              <span id="tomDayWeek" class=" text-gray">saturday</span>
+            </div>
+            <div class="text-center mt-5">
+              <img id="tomPic" src="" class="" alt="">
+              <h3 id="MaxTempTom" class="ps-2 mt-3 fw-bolder  text-white ">24c</h3>
+              <h5 id="MinTempTom" class="ps-2  mt-3 fw-bold  text-gray ">24c</h5>
+              <h5 id="stateOfWTom" class="text-info mt-3 fs-5 ms-2">sunny</h5>
+            </div>
+            
+          </div>
+          <div class="col-md-4 p-0  backg     ">
+            <div class=" text-center  bg-head p-2">
+              <span id="tomNextDayWeek" class=" text-gray">saturday</span>
+            </div>
+            <div class="text-center mt-5">
+              <img id="tomNextPic" src="" class="" alt="">
+              <h3  id="MaxTempTomNext" class="ps-2 mt-3 fw-bolder  text-white ">24c</h3>
+              <h5  id="MinTempTomNext" class="ps-2  mt-3 fw-bold  text-gray ">24c</h5>
+              <h5 id="stateOfWTomNext" class="text-info mt-3 fs-5 ms-2">sunny</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="backgraoundB mt-5 pb-4">
+      <div class="container pb">
+        <div class="row">
+          <div class="col-md-8">
+            <form action="" class="position-relative">
+              <input class="form-control rounded rounded-5 pt-3  pb-3 border-0 mt-5 mb-3 " type="text"
+                id="exampleFormControlInput1" placeholder="Find your location">
+              <button
+                class="btn  btn-info position-absolute top-0 end-0 me-1 my-auto px-5 mt-1 pt-2 pb-2 rounded rounded-5 fs-5 text-white">subscribe</button>
+            </form>
+          </div>
+          <div class="col-md-4 ">
+            <div class="row mt-5 ms-2 social-links">
+              <div class="col-md-2">
+                <a class="text-decoration-none" href=""> <i class="fa-brands fa-facebook-f  fa-2x "></i></a>
+              </div>
+              <div class="col-md-2">
+                <a class="text-decoration-none" href=""> <i class="fa-brands fa-twitter fa-2x"></i>
+                </a>
+              </div>
+              <div class="col-md-2">
+                <a class="text-decoration-none" href=""> <i class="fa-brands fa-google-plus-g  fa-2x"></i></a>
+              </div>
+              <div class="col-md-2">
+                <a class="text-decoration-none" href=""> <i class="fa-brands fa-pinterest  fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-white mb-5 pt-2">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

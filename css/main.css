@@ -1,0 +1,65 @@
+:root {
+  --bs-body-bg: #1e202b;
+  
+}
+
+.logo-type {
+  display: inline-block;
+  vertical-align: middle;
+}
+.text-gray {
+  color: #bfc1bf;
+}
+.form-control:focus {
+  color: white;
+  background-color: var(--bs-body-bg);
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none;
+}
+
+.setbackimg {
+  background-image: url(../image/banner.png);
+  height: 350px;
+  background-size: contain;
+}
+.bg-head {
+  background-color: #2d303d;
+}
+.w-hamo {
+  width: 65%;
+}
+.text-deco {
+  background-color: #222530;
+}
+.fontsi {
+  font-size: 75px;
+}
+.backg {
+  background-color: #323544;
+}
+.backgraoundB {
+  background-color: #262936;
+}
+.social-links i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1e202b;
+  color: #009ad8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all;
+}
+.social-links i:hover {
+  background-color: #009ad8;
+  color: white;
+}
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: red;
+}
+::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
